@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "pip": "^0.0.1"
+  },
+  "name": "proyecto001",
+  "version": "1.0.0",
+  "description": "Proyecto de Youtube de Django",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "PruebaDjango"
+  },
+  "author": "Hacedor",
+  "license": "ISC"
+}
