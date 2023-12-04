@@ -11,9 +11,6 @@ def index(request):
         'title':title
     })
 
-def hello(request, username):
-    return HttpResponse("<h1>Hello %s</h1>" % username)
-
 def about(request):
     username = "Hacedor"
     return render(request,'about.html' , {
@@ -28,5 +25,7 @@ def projects(request):
     })
 
 def task(request):
-    task = get_object_or_404(Task)
-    return render(request,'task.html')
+    tasks = Task.objects.all()
+    return render(request,'task.html' , {
+        'tasks':tasks
+    })
